@@ -45,7 +45,7 @@ def get_user_balance(user_id):
 
 @app.route('/newfunction')
 def new_fuction():
-    return ("v1")
+    return jsonify({'Status': 'OK'}), 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
