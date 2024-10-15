@@ -43,6 +43,10 @@ def get_user_balance(user_id):
         return jsonify({'balance': user.balance}), 200
     return jsonify({'error': 'User not found'}), 404
 
+@app.route('/newfunction')
+def new_fuction():
+    return ("v1")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
 
